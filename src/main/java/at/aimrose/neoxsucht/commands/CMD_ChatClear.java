@@ -21,12 +21,12 @@ public class CMD_ChatClear implements CommandExecutor {
         if (p.hasPermission("neoxsucht.chatclear") || p.hasPermission("neoxsucht.*")) {
             for (int i = 0; i < 105; ++i) {
                 for (Player all : Bukkit.getOnlinePlayers()) {
-                    if (!all.hasPermission("neoxsucht.chatclear") || p.hasPermission("neoxsucht.*")) {
+                    if (!all.hasPermission("neoxsucht.teamchatclear")) {
                         all.sendMessage("");
                     }
                 }
             }
-            Bukkit.broadcastMessage(Main.PREFIX + "§7 Der Chat wurde zur Sicherheit der Spieler von §e" + p.getName() + "§7geleert.");
+            Bukkit.broadcastMessage(Main.PREFIX + "§7 Der Chat wurde zur Sicherheit der Spieler von §e " + p.getName() + "§7 geleert.");
             return true;
 
         } else {
