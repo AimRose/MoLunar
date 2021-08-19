@@ -2,3 +2,17 @@ name: NeoxsuchtSystemV1
 version: ${project.version}
 main: at.aimrose.neoxsucht.Main
 authors: [ AimRose ]
+
+commands:
+  Feed:
+    description: Hunger stillen.
+  Fly:
+    description: Fly aktivieren/deaktiveren.
+  Heal:
+    description: Healen.
+  Kick:
+    description: Kicke eine Person.
+  CC:
+    description: ChatClear
+  ChatClear:
+    description: ChatClear

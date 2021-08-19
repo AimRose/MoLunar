@@ -1,5 +1,6 @@
 package at.aimrose.neoxsucht;
 
+import at.aimrose.neoxsucht.commands.*;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -23,6 +24,13 @@ public final class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
+
+        getCommand("kick").setExecutor(new CMD_Kick());
+        getCommand("heal").setExecutor(new CMD_Heal());
+        getCommand("feed").setExecutor(new CMD_Feed());
+        getCommand("fly").setExecutor(new CMD_Fly());
+        getCommand("cc").setExecutor(new CMD_ChatClear());
+        getCommand("chatclear").setExecutor(new CMD_ChatClear());
 
         log("§7is §2enabled.");
     }
