@@ -1,0 +1,4 @@
+name: NeoxsuchtSystemV1
+version: ${project.version}
+main: at.aimrose.neoxsucht.Main
+authors: [ AimRose ]
