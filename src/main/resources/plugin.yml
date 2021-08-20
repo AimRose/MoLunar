@@ -16,3 +16,9 @@ commands:
     description: ChatClear
   ChatClear:
     description: ChatClear
+  GM:
+    description: Gamemode
+  Gamemode:
+    description: Gamemode
+  Wartung:
+    description: Wartung
