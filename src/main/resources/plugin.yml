@@ -22,3 +22,11 @@ commands:
     description: Gamemode
   Wartung:
     description: Wartung
+  Perks:
+    description: Perks
+  Globalmute:
+    description: Chat an/aus
+  Enderchest:
+    description: Enderchest
+  Ec:
+    description: Enderchest

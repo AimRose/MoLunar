@@ -14,9 +14,9 @@ public class PlayerJoinListener implements Listener {
     public void onJoin(PlayerJoinEvent e) {
         Player p = e.getPlayer();
         if (!p.hasPlayedBefore()) {
-            e.setJoinMessage("§7Willkommen §e" + p.getDisplayName() + "§7auf §d§lAimRose§7!");
+            e.setJoinMessage(" ");
         } else {
-            e.setJoinMessage("§7[§a+§7] §e" + p.getDisplayName());
+            e.setJoinMessage(" ");
         }
         //Wartung
 
@@ -33,13 +33,13 @@ public class PlayerJoinListener implements Listener {
     @EventHandler
     public void onQuit(PlayerQuitEvent e) {
         Player p = e.getPlayer();
-        e.setQuitMessage("§7[§4-§7] §e" + p.getDisplayName());
+        e.setQuitMessage(" ");
     }
 
     @EventHandler
     public void ServerPing(ServerListPingEvent e) {
         if (Main.wartung == true) {
-            e.setMotd("§6§LNEOXSUCHT §8» §4Wartungsarbeiten.");
+            e.setMotd("§f§LNeoxSucht §8» §4Wartungsarbeiten.");
         }
 
     }
