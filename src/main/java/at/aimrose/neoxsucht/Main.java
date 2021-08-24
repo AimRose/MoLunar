@@ -10,8 +10,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 public final class Main extends JavaPlugin {
 
     //PREFIX
-    public static String PREFIX = "§6§lNEOXSUCHT§8» ";
-    public static String PERMS = "§7Du bist nicht dazu berechtigt diesen Command auszuführen.";
+    public static String PREFIX = "§f§lNEOXSUCHT§8» ";
+    public static String PERMS = "§7Diesen Befehl gibt es nicht benutze §e/help§7!";
     //Wartung
     public static boolean wartung;
     //Main
