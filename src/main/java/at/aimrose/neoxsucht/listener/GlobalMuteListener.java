@@ -12,7 +12,7 @@ public class GlobalMuteListener implements Listener {
     @EventHandler
     public void onChat(AsyncPlayerChatEvent e) {
         if (CMD_Globalmute.globalmute) {
-            if (e.getPlayer().hasPermission("system.globalmute.bypass")) {
+            if (e.getPlayer().hasPermission("system.globalmute.bypass") || (e.getPlayer().hasPermission("neoxsucht.*"))) {
                 return;
             }
             e.getPlayer().sendMessage(Main.PREFIX + "§7Zurzeit ist der Chat leider §4deaktiviert§7.");

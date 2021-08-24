@@ -1,6 +1,7 @@
 package at.aimrose.neoxsucht.commands;
 
 import at.aimrose.neoxsucht.Main;
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -17,16 +18,18 @@ public class CMD_Globalmute implements CommandExecutor {
         }else{
             Player p = (Player) sender;
 
-            if(!(p.hasPermission("system.globalmute") || (p.hasPermission("system.*")))) {
+            if(!(p.hasPermission("neoxsucht.globalmute") || (p.hasPermission("neoxsucht.*")))) {
                 p.sendMessage(Main.PREFIX + Main.PERMS);
                 return true;
             }
-            if(globalmute) {
-                globalmute = false;
-                p.sendMessage(Main.PREFIX + "§7Der Chat wurde von §e " + sender.getName() + "§7 aktiviert");
-            }else{
-                globalmute =  true;
-                p.sendMessage(Main.PREFIX + "§7Der Chat wurde von §e " + sender.getName() + "§7 deaktiviert");
+            for (Player all : Bukkit.getOnlinePlayers()) {
+                if (globalmute) {
+                    globalmute = false;
+                    all.sendMessage(Main.PREFIX + "§7Der Chat wurde von §e " + sender.getName() + "§7 aktiviert");
+                } else {
+                    globalmute = true;
+                    all.sendMessage(Main.PREFIX + "§7Der Chat wurde von §e " + sender.getName() + "§7 deaktiviert");
+                }
             }
 
         }

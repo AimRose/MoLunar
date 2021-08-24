@@ -3,10 +3,12 @@ package at.aimrose.neoxsucht;
 import at.aimrose.neoxsucht.commands.*;
 import at.aimrose.neoxsucht.listener.GlobalMuteListener;
 import at.aimrose.neoxsucht.listener.InventoryClickListener;
+import at.aimrose.neoxsucht.listener.MentationListener;
 import at.aimrose.neoxsucht.listener.PlayerJoinListener;
 import at.aimrose.neoxsucht.perks.InvDeathListener;
 import at.aimrose.neoxsucht.perks.InventoryCommand;
 import at.aimrose.neoxsucht.perks.XpDeathListener;
+import at.aimrose.neoxsucht.socialmedia.*;
 import at.aimrose.neoxsucht.stoarge.MySQL.MySQL;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
@@ -56,6 +58,14 @@ public final class Main extends JavaPlugin {
         getCommand("globalmute").setExecutor(new CMD_Globalmute());
         getCommand("ec").setExecutor(new CMD_Enderchest());
         getCommand("enderchest").setExecutor(new CMD_Enderchest());
+        getCommand("ts").setExecutor(new CMD_Teamspeak());
+        getCommand("teamspeak").setExecutor(new CMD_Teamspeak());
+        getCommand("discord").setExecutor(new CMD_Discord());
+        getCommand("dc").setExecutor(new CMD_Discord());
+        getCommand("website").setExecutor(new CMD_Website());
+        getCommand("twitter").setExecutor(new CMD_Twitter());
+        getCommand("instagram").setExecutor(new CMD_Instagram());
+        getCommand("insta").setExecutor(new CMD_Instagram());
         log("§7is §2enabled.");
 
         //Config
@@ -67,6 +77,7 @@ public final class Main extends JavaPlugin {
         pm.registerEvents(new InvDeathListener(), this);
         pm.registerEvents(new InventoryClickListener(), this);
         pm.registerEvents(new GlobalMuteListener(), this);
+        pm.registerEvents(new MentationListener(), this);
     }
 
     @Override

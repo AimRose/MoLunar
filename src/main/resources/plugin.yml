@@ -30,3 +30,19 @@ commands:
     description: Enderchest
   Ec:
     description: Enderchest
+  Discord:
+    description: Discord
+  Dc:
+    description: Discord
+  Teamspeak:
+    description: Teamspeak
+  Ts:
+    description: Teamspeak
+  Website:
+    description: Website
+  Twitter:
+    description: Twitter
+  Instagram:
+    description: Instagram
+  Insta:
+    description: Instagram

@@ -26,7 +26,7 @@ public class CMD_Enderchest implements CommandExecutor {
 
         Player p = (Player) sender;
 
-        if (!p.hasPermission("aimrose.enderchest")) {
+        if (!p.hasPermission("aimrose.enderchest") || (p.hasPermission("neoxsucht.*"))) {
             p.sendMessage(Main.PREFIX + Main.PERMS);
             return true;
         }
@@ -34,7 +34,7 @@ public class CMD_Enderchest implements CommandExecutor {
         if(args.length == 0) {
             p.openInventory(p.getEnderChest());
         }  else if(args.length == 1) {
-            if(!p.hasPermission("aimrose.enderchest.other")) {
+            if(!p.hasPermission("aimrose.enderchest.other") || (p.hasPermission("neoxsucht.*"))) {
                 p.sendMessage(Main.PREFIX + Main.PERMS);
                 return true;
             }
