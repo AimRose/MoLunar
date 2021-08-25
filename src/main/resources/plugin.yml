@@ -26,10 +26,10 @@ commands:
     description: Perks
   Globalmute:
     description: Chat an/aus
-  Enderchest:
-    description: Enderchest
-  Ec:
-    description: Enderchest
+  Broadcast:
+    description: Broadcast
+  Bc:
+    description: Broadcast
   Discord:
     description: Discord
   Dc:

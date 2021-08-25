@@ -56,8 +56,11 @@ public final class Main extends JavaPlugin {
         getCommand("wartung").setExecutor(new CMD_Wartung());
         getCommand("perks").setExecutor(new InventoryCommand());
         getCommand("globalmute").setExecutor(new CMD_Globalmute());
-        getCommand("ec").setExecutor(new CMD_Enderchest());
-        getCommand("enderchest").setExecutor(new CMD_Enderchest());
+        getCommand("bc").setExecutor(new CMD_Broadcast());
+        getCommand("broadcast").setExecutor(new CMD_Broadcast());
+
+        //Socialmedia CMD's
+
         getCommand("ts").setExecutor(new CMD_Teamspeak());
         getCommand("teamspeak").setExecutor(new CMD_Teamspeak());
         getCommand("discord").setExecutor(new CMD_Discord());
@@ -66,6 +69,8 @@ public final class Main extends JavaPlugin {
         getCommand("twitter").setExecutor(new CMD_Twitter());
         getCommand("instagram").setExecutor(new CMD_Instagram());
         getCommand("insta").setExecutor(new CMD_Instagram());
+
+
         log("§7is §2enabled.");
 
         //Config
