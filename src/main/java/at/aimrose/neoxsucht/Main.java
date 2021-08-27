@@ -87,6 +87,7 @@ public final class Main extends JavaPlugin {
         pm.registerEvents(new GlobalMuteListener(), this);
         pm.registerEvents(new MentationListener(), this);
         pm.registerEvents(new ClickListener(), this);
+        pm.registerEvents(new ClickEvent(), this);
     }
 
 
