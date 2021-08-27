@@ -1,19 +1,21 @@
 package at.aimrose.neoxsucht;
 
 import at.aimrose.neoxsucht.commands.*;
-import at.aimrose.neoxsucht.listener.GlobalMuteListener;
-import at.aimrose.neoxsucht.listener.InventoryClickListener;
-import at.aimrose.neoxsucht.listener.MentationListener;
-import at.aimrose.neoxsucht.listener.PlayerJoinListener;
+import at.aimrose.neoxsucht.listener.*;
+import at.aimrose.neoxsucht.menu.ClickListener;
+import at.aimrose.neoxsucht.menu.MenuCommand;
 import at.aimrose.neoxsucht.perks.InvDeathListener;
 import at.aimrose.neoxsucht.perks.InventoryCommand;
 import at.aimrose.neoxsucht.perks.XpDeathListener;
 import at.aimrose.neoxsucht.socialmedia.*;
 import at.aimrose.neoxsucht.stoarge.MySQL.MySQL;
 import org.bukkit.Bukkit;
+
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+
+
 
 public final class Main extends JavaPlugin {
 
@@ -58,6 +60,7 @@ public final class Main extends JavaPlugin {
         getCommand("globalmute").setExecutor(new CMD_Globalmute());
         getCommand("bc").setExecutor(new CMD_Broadcast());
         getCommand("broadcast").setExecutor(new CMD_Broadcast());
+        getCommand("menu").setExecutor(new MenuCommand());
 
         //Socialmedia CMD's
 
@@ -83,9 +86,12 @@ public final class Main extends JavaPlugin {
         pm.registerEvents(new InventoryClickListener(), this);
         pm.registerEvents(new GlobalMuteListener(), this);
         pm.registerEvents(new MentationListener(), this);
+        pm.registerEvents(new ClickListener(), this);
     }
 
-    @Override
+
+
+        @Override
     public void onDisable() {
         MySQL.close();
 
@@ -96,5 +102,6 @@ public final class Main extends JavaPlugin {
     public void log(String text) {
         Bukkit.getConsoleSender().sendMessage(PREFIX + text);
     }
+
 
 }

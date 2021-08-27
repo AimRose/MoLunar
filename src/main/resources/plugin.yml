@@ -30,6 +30,8 @@ commands:
     description: Broadcast
   Bc:
     description: Broadcast
+  Menu:
+    description: Menu
   Discord:
     description: Discord
   Dc:
@@ -46,3 +48,4 @@ commands:
     description: Instagram
   Insta:
     description: Instagram
+
