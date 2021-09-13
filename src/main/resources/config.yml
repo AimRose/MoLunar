@@ -1,6 +1,40 @@
+#Connection mit MySQL nötig wenn die Perks nicht beim rejoinen verschwinden sollen.
+#MYSQL CONNECT
 MySQL:
   username:
   password:
   database:
   port:
   host:
+
+#Prefix des Plugins (Nicht als eigenes Ausgeben).
+PluginPrefix:
+  Prefix: "§c§LMoLunar§8» "
+
+#Messages von den ganzen Befehlen.
+Heal:
+  YouHeal: "§7Du wurdest geheilt."
+
+#Permissions von den Befehlen.
+Permissions:
+  Heal: ""
+  Feed: ""
+  Kick: ""
+  Wartung: ""
+  Gamemode: ""
+  Broadcast: ""
+  ChatClear: ""
+  Fly: ""
+  Mentation: ""
+
+#Permissions für Perks.
+PerkPermissions:
+  Glowing: ""
+  Speed: ""
+  Stärke: ""
+  Haste: ""
+  KeepXP: ""
+  KeepInventory: ""
+  NoHunger: ""
+
+

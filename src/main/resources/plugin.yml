@@ -48,4 +48,5 @@ commands:
     description: Instagram
   Insta:
     description: Instagram
-
+  Bestrafungen:
+    description: Bestrafungen
