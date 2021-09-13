@@ -12,7 +12,7 @@ public class CMD_Fly implements CommandExecutor {
 
         if (sender instanceof Player) {
             Player player = (Player) sender;
-            if (player.hasPermission("neoxsucht.fly") || (player.hasPermission("neoxsucht.*"))) {
+            if (player.hasPermission(Main.Fly)) {
                 if (args.length == 0) {
                     if (player.getAllowFlight()) {
                         player.sendMessage(Main.PREFIX + "§7Dein Flugmodus wurde deaktiviert.");

@@ -1,5 +1,7 @@
 package at.aimrose.molunar.perks;
 
+import at.aimrose.molunar.Main;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -15,13 +17,13 @@ public enum Perk {
        No Drowning,
      */
 
-    GLOWING("perks.glowing", "§eLeuchten", Arrays.asList("§7Klicke zum aktivieren/deaktivieren.")),
-    SPEED("perks.speed", "§eSchnelligkeit", Arrays.asList("§7Klicke zum aktivieren/deaktivieren.")),
-    Strength("perks.stärke", "§eStärke", Arrays.asList("§7Klicke zum aktivieren/deaktivieren.")),
-    HASTE("perks.haste", "§eSchneller Abbauen", Arrays.asList("§7Klicke zum aktivieren/deaktivieren.")),
-    KEEP_XP("perks.keepxp", "§eXP nach dem Tot behalten.", Arrays.asList("§7Klicke zum aktivieren/deaktivieren.")),
-    NO_HUNGER("perks.nohunger", "§eKeinen Hunger", Arrays.asList("§7Klicke zum aktivieren/deaktivieren.")),
-    KEEP_INVENTORY("perks.keepinventory", "§eInventar nach dem Tot behalten.", Arrays.asList("§7Klicke zum aktivieren/deaktivieren."));
+    GLOWING("perk.glowing", "§eLeuchten", Arrays.asList("§7Klicke zum aktivieren/deaktivieren.")),
+    SPEED("perk.speed", "§eSchnelligkeit", Arrays.asList("§7Klicke zum aktivieren/deaktivieren.")),
+    Strength("perk.stärke", "§eStärke", Arrays.asList("§7Klicke zum aktivieren/deaktivieren.")),
+    HASTE("perk.haste", "§eSchneller Abbauen", Arrays.asList("§7Klicke zum aktivieren/deaktivieren.")),
+    KEEP_XP("perk.keepxp", "§eXP nach dem Tot behalten.", Arrays.asList("§7Klicke zum aktivieren/deaktivieren.")),
+    NO_HUNGER("perk.nohunger", "§eKeinen Hunger", Arrays.asList("§7Klicke zum aktivieren/deaktivieren.")),
+    KEEP_INVENTORY("perk.keepinventory", "§eInventar nach dem Tot behalten.", Arrays.asList("§7Klicke zum aktivieren/deaktivieren."));
 
     private String permission;
     private String displayName;

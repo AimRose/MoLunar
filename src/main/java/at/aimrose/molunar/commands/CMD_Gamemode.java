@@ -13,7 +13,7 @@ public class CMD_Gamemode implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player) {
             Player p = (Player) sender;
-            if (p.hasPermission("neoxsucht.gamemode") || p.hasPermission("neoxsucht.*")) {
+            if (p.hasPermission(Main.Gamemode)) {
                 if (args.length == 0) {
                     p.sendMessage(Main.PREFIX + "§7Bentuze bitte /gm 0 | 1 | 2 | 3 [Spieler]");
                 } else if (args.length == 1) {

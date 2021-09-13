@@ -14,7 +14,7 @@ public class CMD_Feed implements CommandExecutor {
 
         if (sender instanceof Player) {
             Player player = (Player) sender;
-            if (player.hasPermission("neoxsucht.feed") || (player.hasPermission("neoxsucht.*"))) {
+            if (player.hasPermission(Main.Feed)) {
                 if (args.length == 0) {
                     player.setFoodLevel(20);
                     player.sendMessage(Main.PREFIX + "§7Dein Hunger wurde gestillt.");

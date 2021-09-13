@@ -16,7 +16,7 @@ public class CMD_Wartung implements CommandExecutor {
 
         if (sender instanceof Player) {
             Player p = (Player) sender;
-            if (p.hasPermission("neoxsucht.wartung")) {
+            if (p.hasPermission(Main.Wartung)) {
                 if (Main.wartung == true) {
                     setWartung(false);
                     Main.wartung = false;

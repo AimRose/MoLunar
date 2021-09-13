@@ -14,7 +14,7 @@ public class CMD_Heal implements CommandExecutor {
 
         if (sender instanceof Player) {
             Player player = (Player) sender;
-            if (player.hasPermission("neoxsucht.heal") || (player.hasPermission("neoxsucht.*"))) {
+            if (player.hasPermission(Main.Heal)) {
                 if (args.length == 0) {
                     player.setFoodLevel(20);
                     player.setHealth(20);

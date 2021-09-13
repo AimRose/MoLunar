@@ -13,7 +13,7 @@ public class CMD_Kick implements CommandExecutor {
 
         if (sender instanceof Player) {
             Player player = (Player) sender;
-            if (player.hasPermission("neoxsucht.kick")) {
+            if (player.hasPermission(Main.Kick)) {
                 if (args.length == 0) {
                     player.sendMessage(Main.PREFIX + "§7Bitte benutze /kick [Name] [Grund]");
                 } else if (args.length == 1) {

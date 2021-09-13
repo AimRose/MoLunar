@@ -17,24 +17,14 @@ Heal:
 
 #Permissions von den Befehlen.
 Permissions:
-  Heal: ""
-  Feed: ""
-  Kick: ""
-  Wartung: ""
-  Gamemode: ""
-  Broadcast: ""
-  ChatClear: ""
-  Fly: ""
-  Mentation: ""
-
-#Permissions für Perks.
-PerkPermissions:
-  Glowing: ""
-  Speed: ""
-  Stärke: ""
-  Haste: ""
-  KeepXP: ""
-  KeepInventory: ""
-  NoHunger: ""
+  Heal: "molunar.heal"
+  Feed: "molunar.feed"
+  Kick: "molunar.kick"
+  Wartung: "molunar.wartung"
+  Gamemode: "molunar.gamemode"
+  Broadcast: "molunar.broadcast"
+  ChatClear: "molunar.chatclear"
+  Fly: "molunar.fly"
+  Mentation: "molunar.mentation"
 
 

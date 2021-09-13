@@ -21,7 +21,7 @@ public class PlayerJoinListener implements Listener {
         //Wartung
 
         if (Main.wartung == true) {
-            if (!p.hasPermission("neoxsucht.wartung.bypass") || (p.hasPermission("neoxsucht.*"))) {
+            if (!p.hasPermission(Main.Wartung) || (p.hasPermission("molunar.*"))) {
                 p.kickPlayer("§cDas Netzwerk hat aktuell Wartungarbeiten an ihren Servern \n"
                         + "§3Wir bitten deshalb um euer Verständnis.");
                 return;

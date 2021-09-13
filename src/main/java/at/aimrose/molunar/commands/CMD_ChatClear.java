@@ -18,10 +18,10 @@ public class CMD_ChatClear implements CommandExecutor {
 
         Player p = (Player) sender;
 
-        if (p.hasPermission("neoxsucht.chatclear") || p.hasPermission("neoxsucht.*")) {
+        if (p.hasPermission(Main.ChatClear)) {
             for (int i = 0; i < 105; ++i) {
                 for (Player all : Bukkit.getOnlinePlayers()) {
-                    if (!all.hasPermission("neoxsucht.teamchatclear")) {
+                    if (!all.hasPermission(Main.ChatClear)) {
                         all.sendMessage("");
                     }
                 }

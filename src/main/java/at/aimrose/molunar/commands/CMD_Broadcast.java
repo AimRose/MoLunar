@@ -10,7 +10,7 @@ public class CMD_Broadcast implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-        if (sender.hasPermission("neoxsucht.broadcast") || (sender.hasPermission("neoxsucht.*"))) {
+        if (sender.hasPermission(Main.Broadcast)) {
 
             if (args.length >= 1) {
                 String msg = "";

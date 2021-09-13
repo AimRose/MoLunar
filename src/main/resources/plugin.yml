@@ -1,6 +1,6 @@
 name: NeoxsuchtSystemV1
 version: ${project.version}
-main: at.aimrose.neoxsucht.Main
+main: at.aimrose.molunar.Main
 authors: [ AimRose ]
 
 commands:

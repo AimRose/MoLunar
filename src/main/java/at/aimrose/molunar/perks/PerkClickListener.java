@@ -16,7 +16,7 @@ public class PerkClickListener implements Listener {
         Player p = (Player) e.getWhoClicked();
         if (e.getInventory().getTitle() == "§f§LNeoxSucht") {
             e.setCancelled(true);
-            if (p.hasPermission("perks.hunger")) {
+            if (p.hasPermission("perk.nohunger")) {
                 if (e.getCurrentItem().getItemMeta().getDisplayName() == "§eKein Hunger") {
                     PerkManager.updatePlayerPerkState(p.getUniqueId(), Perk.NO_HUNGER, !PerkManager.getPlayerPerkStates(p.getUniqueId()).contains(Perk.NO_HUNGER));
                     if (PerkManager.getPlayerPerkStates(p.getUniqueId()).contains(Perk.NO_HUNGER)) {
@@ -31,7 +31,7 @@ public class PerkClickListener implements Listener {
                 p.sendMessage(Main.PREFIX + Main.PERMS);
                 return;
             }
-            if (p.hasPermission("perks.speed")) {
+            if (p.hasPermission("perk.speed")) {
                 if (e.getCurrentItem().getItemMeta().getDisplayName() == "§eSchnelligkeit") {
                     PerkManager.updatePlayerPerkState(p.getUniqueId(), Perk.SPEED, !PerkManager.getPlayerPerkStates(p.getUniqueId()).contains(Perk.SPEED));
                     if (PerkManager.getPlayerPerkStates(p.getUniqueId()).contains(Perk.SPEED)) {
@@ -48,7 +48,7 @@ public class PerkClickListener implements Listener {
                 p.sendMessage(Main.PREFIX + Main.PERMS);
                 return;
             }
-            if (p.hasPermission("perks.stärke")) {
+            if (p.hasPermission("perk.stärke")) {
                 if (e.getCurrentItem().getItemMeta().getDisplayName() == "§eStärke") {
                     PerkManager.updatePlayerPerkState(p.getUniqueId(), Perk.Strength, !PerkManager.getPlayerPerkStates(p.getUniqueId()).contains(Perk.Strength));
                     if (PerkManager.getPlayerPerkStates(p.getUniqueId()).contains(Perk.Strength)) {
@@ -65,7 +65,7 @@ public class PerkClickListener implements Listener {
                 p.sendMessage(Main.PREFIX + Main.PERMS);
                 return;
             }
-            if (p.hasPermission("perks.haste")) {
+            if (p.hasPermission("perk.haste")) {
                 if (e.getCurrentItem().getItemMeta().getDisplayName() == "§eSchneller Abbauen") {
                     PerkManager.updatePlayerPerkState(p.getUniqueId(), Perk.HASTE, !PerkManager.getPlayerPerkStates(p.getUniqueId()).contains(Perk.HASTE));
                     if (PerkManager.getPlayerPerkStates(p.getUniqueId()).contains(Perk.HASTE)) {
@@ -82,7 +82,7 @@ public class PerkClickListener implements Listener {
                 p.sendMessage(Main.PREFIX + Main.PERMS);
                 return;
             }
-            if (p.hasPermission("perks.leuchten")) {
+            if (p.hasPermission("perk.glowing")) {
                 if (e.getCurrentItem().getItemMeta().getDisplayName() == "§eLeuchten") {
                     PerkManager.updatePlayerPerkState(p.getUniqueId(), Perk.GLOWING, !PerkManager.getPlayerPerkStates(p.getUniqueId()).contains(Perk.GLOWING));
                     if (PerkManager.getPlayerPerkStates(p.getUniqueId()).contains(Perk.GLOWING)) {
@@ -99,7 +99,7 @@ public class PerkClickListener implements Listener {
                 p.sendMessage(Main.PREFIX + Main.PERMS);
                 return;
             }
-            if (p.hasPermission("perks.keepxp")) {
+            if (p.hasPermission("perk.keepxp")) {
                 if (e.getCurrentItem().getItemMeta().getDisplayName() == "§eXP nach dem Tod behalten") {
                     PerkManager.updatePlayerPerkState(p.getUniqueId(), Perk.KEEP_XP, !PerkManager.getPlayerPerkStates(p.getUniqueId()).contains(Perk.KEEP_XP));
                     if (PerkManager.getPlayerPerkStates(p.getUniqueId()).contains(Perk.KEEP_XP)) {
@@ -114,7 +114,7 @@ public class PerkClickListener implements Listener {
                 p.sendMessage(Main.PREFIX + Main.PERMS);
                 return;
             }
-            if (p.hasPermission("perks.keepinv")) {
+            if (p.hasPermission("perk.keepinventory")) {
                 if (e.getCurrentItem().getItemMeta().getDisplayName() == "§eInventar nach dem Tod behalten") {
                     PerkManager.updatePlayerPerkState(p.getUniqueId(), Perk.KEEP_INVENTORY, !PerkManager.getPlayerPerkStates(p.getUniqueId()).contains(Perk.KEEP_INVENTORY));
                     if (PerkManager.getPlayerPerkStates(p.getUniqueId()).contains(Perk.KEEP_INVENTORY)) {

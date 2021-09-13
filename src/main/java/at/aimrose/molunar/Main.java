@@ -32,14 +32,6 @@ public final class Main extends JavaPlugin {
     public static String Gamemode = "";
     public static String Mentation = "";
     public static String ChatClear = "";
-    //PerkPermissions
-    public static String Glowing = "";
-    public static String Stärke = "";
-    public static String Speed = "";
-    public static String Haste = "";
-    public static String NoHunger = "";
-    public static String KeepXp = "";
-    public static String KeepInventory = "";
     //PREFIX
     public static String PREFIX = "";
     //NO PERMS
@@ -72,14 +64,6 @@ public final class Main extends JavaPlugin {
         ChatClear = this.getConfig().getString("Permissions.ChatClear");
         Gamemode = this.getConfig().getString("Permissions.Gamemode");
         Mentation = this.getConfig().getString("Permissions.Mentation");
-        //PerkPermissions
-        Glowing = this.getConfig().getString("PerkPermissions.Glowing");
-        Stärke = this.getConfig().getString("PerkPermissions.Stärke");
-        Speed = this.getConfig().getString("PerkPermissions.Speed");
-        Haste = this.getConfig().getString("PerkPermissions.Haste");
-        KeepXp = this.getConfig().getString("PerkPermissions.KeepXp");
-        KeepInventory = this.getConfig().getString("PerkPermissions.KeepInventory");
-        NoHunger = this.getConfig().getString("PerkPermissions.NoHunger");
         //Messages
         YouHeal = this.getConfig().getString("Heal.YouHeal");
         //Prefix
