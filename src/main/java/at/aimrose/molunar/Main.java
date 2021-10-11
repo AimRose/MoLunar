@@ -20,8 +20,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Main extends JavaPlugin {
 
-    //Messages
-    public static String YouHeal = "";
+
     //Permissions
     public static String Heal = "";
     public static String Feed = "";
@@ -64,8 +63,6 @@ public final class Main extends JavaPlugin {
         ChatClear = this.getConfig().getString("Permissions.ChatClear");
         Gamemode = this.getConfig().getString("Permissions.Gamemode");
         Mentation = this.getConfig().getString("Permissions.Mentation");
-        //Messages
-        YouHeal = this.getConfig().getString("Heal.YouHeal");
         //Prefix
         PREFIX = this.getConfig().getString("PluginPrefix.Prefix");
         //MySQL

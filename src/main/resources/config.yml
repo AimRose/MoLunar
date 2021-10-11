@@ -11,10 +11,6 @@ MySQL:
 PluginPrefix:
   Prefix: "§c§LMoLunar§8» "
 
-#Messages von den ganzen Befehlen.
-Heal:
-  YouHeal: "§7Du wurdest geheilt."
-
 #Permissions von den Befehlen.
 Permissions:
   Heal: "molunar.heal"
